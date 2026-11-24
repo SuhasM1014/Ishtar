@@ -28,11 +28,10 @@ Journal users get 3 check-ins a day:
 - Hot flashes, night sweats, irregular cycles, mood shifts
 - Uses trend tracking rather than date prediction, because cycles become irregular
 
-## Connected insights (opt-in)
+## Connected insights
 
-- Every module works alone by default.
-- The user chooses which modules may "compare notes".
-- Only then does Ishtar look for patterns across them, for example: "low-mood check-ins cluster 3 days before your period".
+- Every module works alone by default; you choose which modules can compare notes, and Ishtar reveals patterns.
+- Example: "low-mood check-ins cluster 3 days before your period".
 
 ## Doctor visit summary
 
@@ -46,6 +45,24 @@ One tap creates a one-page summary containing:
 - Suggested questions to ask
 
 The user reviews and edits it, then exports it as a PDF. Nothing is shared automatically. It never diagnoses; it says "worth asking your doctor about".
+
+## Voice (ElevenLabs)
+
+### Pre-recorded guided voice content
+
+ElevenLabs is used at build time to generate audio that ships inside the app, so no user data is sent at runtime. Available in English, Hindi and Kannada.
+
+- Voice prompts for the 3 daily check-ins (morning, afternoon, night)
+- Guided breathing and grounding exercises shown after low-mood check-ins
+- Calming wind-down audio for the night check-in
+
+### Read insights aloud (optional)
+
+The user can turn on ElevenLabs text-to-speech to hear insights like "your low-mood days cluster before your period". Only the insight sentence is sent, never journal text, symptoms or audio.
+
+### Accessibility mode
+
+Voice read-out for women with low vision or who find reading English difficult, combined with the Hindi and Kannada audio.
 
 ---
 

@@ -12,6 +12,7 @@ flowchart LR
         IE["Insight engine<br/>TypeScript, all numbers computed in code"]
         LLM["On-device LLM<br/>WebLLM + Transformers.js"]
         ST[("Encrypted store<br/>IndexedDB via Dexie + Web Crypto<br/>PIN-locked")]
+        AU["Pre-recorded audio<br/>(bundled, made with ElevenLabs)"]
         OUT["Output<br/>insights, charts, doctor PDF"]
 
         IN --> IE
@@ -19,20 +20,28 @@ flowchart LR
         IE --> ST
         LLM --> ST
         ST --> OUT
+        AU --> OUT
     end
 
     OUT -. "user taps Share" .-> PDF["Doctor PDF<br/>shared by the user"]
-    OUT -. "user taps Listen<br/>insight text only" .-> EL["ElevenLabs TTS<br/>(optional)"]
+    OUT -. "optional read-aloud (text only)" .-> EL["ElevenLabs TTS"]
 ```
 
 ## What can leave the device
 
 Only two things, and only when the user taps:
 
-| What | When | What is sent |
-|---|---|---|
-| Doctor PDF | The user chooses to share it | The PDF the user reviewed and edited |
-| ElevenLabs voice (optional) | The user asks for insights to be read aloud | Insight text only, never journal text or audio |
+| What | What is sent |
+|---|---|
+| Sharing the doctor PDF | The PDF the user reviewed and edited |
+| Optional ElevenLabs read-aloud | Insight text only |
+
+Guided audio is pre-recorded and ships with the app, so playing it sends nothing.
+
+## Voice rules
+
+- ElevenLabs never receives journal entries, check-in answers or the user's voice.
+- Voice journaling stays fully on-device (Whisper via Transformers.js). We deliberately don't use cloud speech-to-text.
 
 ## Key rule: the LLM never calculates numbers
 

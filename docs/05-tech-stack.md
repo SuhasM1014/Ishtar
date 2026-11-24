@@ -8,7 +8,7 @@
 | Light ML | Transformers.js | Distress classifier, Whisper voice-note transcription |
 | Insight engine | TypeScript | Deterministic stats and correlations |
 | Charts / export | Recharts, jsPDF | Cycle wheel, mood heatmap, doctor PDF |
-| Voice (optional) | ElevenLabs TTS | Reads insights aloud; text only |
+| Voice | ElevenLabs | Pre-recorded check-in and breathing audio (EN/HI/KN); optional read-aloud of insights, text only |
 
 ---
 

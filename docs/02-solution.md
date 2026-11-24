@@ -11,24 +11,36 @@ Ishtar is a feminine physical and mental wellness app. Its four modules can each
 | 3 | **Symptom tracker** | Pain, sleep, energy, skin, digestion. |
 | 4 | **Perimenopause tracker** | Hot flashes, night sweats, irregular cycles, mood shifts. Uses trend tracking rather than date prediction, because cycles become irregular. |
 
-## Connected insights (opt-in)
+## Connected insights
 
-Every module works alone by default. The user chooses which modules may "compare notes". Only then does Ishtar look for patterns across them.
+Every module works alone by default; you choose which modules can compare notes, and Ishtar reveals patterns.
 
 > Example: "low-mood check-ins cluster 3 days before your period"
 
 ## Doctor visit summary
 
-One tap creates a one-page summary. The user reviews and edits it, then exports it as a PDF. Nothing is shared automatically. It never diagnoses; it says "worth asking your doctor about".
+One tap creates a one-page summary: cycle stats, top symptoms and when they occur, mood trends, notable changes, logged medications, and suggested questions to ask. The user reviews and edits it, then exports it as a PDF. Nothing is shared automatically. It never diagnoses; it says "worth asking your doctor about".
+
+## Voice (ElevenLabs)
+
+| Feature | What it does |
+|---|---|
+| **Pre-recorded guided voice content** | Audio generated with ElevenLabs at build time and shipped inside the app, so no user data is sent at runtime: voice prompts for the 3 daily check-ins, breathing and grounding exercises after low-mood check-ins, and calming wind-down audio for the night check-in. English, Hindi and Kannada. |
+| **Read insights aloud** (optional) | ElevenLabs text-to-speech reads insights aloud. Only the insight sentence is sent, never journal text, symptoms or audio. |
+| **Accessibility mode** | Voice read-out for women with low vision or who find reading English difficult, combined with the Hindi and Kannada audio. |
+
+## What's new
+
+- **Voice without surveillance:** ElevenLabs audio in English, Hindi and Kannada; nothing personal is sent.
 
 ## User flow
 
 ```mermaid
 flowchart LR
-    A[Pick your modules] --> B[Log and check in]
-    B --> C[Opt in to compare notes]
-    C --> D[See your patterns]
-    D --> E[Share a doctor summary]
+    A["Pick your modules"] --> B["Log and check in"]
+    B --> C["Let modules compare notes"]
+    C --> D["See your patterns"]
+    D --> E["Share a doctor summary"]
 ```
 
 ---

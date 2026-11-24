@@ -4,8 +4,9 @@
 
 - [ ] Journal with 3× daily check-ins
 - [ ] Period, symptom and perimenopause logging
-- [ ] Opt-in pattern engine with on-device AI
+- [ ] Pattern engine with on-device AI
 - [ ] One-tap doctor visit PDF
+- [ ] ElevenLabs voice for check-ins, breathing and insights (English, Hindi, Kannada)
 - [ ] 3 months of sample data for the demo
 
 ## Roadmap
