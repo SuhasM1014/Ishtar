@@ -116,9 +116,7 @@ Open http://localhost:5173, create a PIN and choose **Explore with 3 months of s
 
 | Field | Value |
 |---|---|
-| Team name | _TBD_ |
 | College | JSSATE |
-| Team ID | _TBD_ |
 
 | Role | Name | USN |
 |---|---|---|
