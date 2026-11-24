@@ -1,4 +1,4 @@
-# Ishtar: Private Feminine Wellness Intelligence
+# Ishtar: Feminine Wellness Intelligence
 
 > We store your most private and intimate data on your device, so you can benefit from the insights Ishtar draws from it.
 
