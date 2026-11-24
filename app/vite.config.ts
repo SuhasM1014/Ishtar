@@ -10,9 +10,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icon.svg'],
       manifest: {
-        name: 'Ishtar: Private Feminine Wellness',
+        name: 'Ishtar: Feminine Wellness Intelligence',
         short_name: 'Ishtar',
-        description: 'Private feminine wellness intelligence. Your data stays on your device.',
+        description: 'Feminine wellness intelligence. Your data stays on your device.',
         theme_color: '#6b2d5c',
         background_color: '#fbf6f9',
         display: 'standalone',
