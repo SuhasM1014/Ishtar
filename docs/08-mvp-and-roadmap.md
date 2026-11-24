@@ -1,0 +1,20 @@
+# 8. MVP and roadmap
+
+## 24-hour MVP
+
+- [ ] Journal with 3× daily check-ins
+- [ ] Period, symptom and perimenopause logging
+- [ ] Opt-in pattern engine with on-device AI
+- [ ] One-tap doctor visit PDF
+- [ ] 3 months of sample data for the demo
+
+## Roadmap
+
+- Hindi and Kannada support
+- Lighter models for low-end phones
+- Phone-optimised on-device models
+- Clinic partnerships
+
+---
+
+Previous: [← Data model](07-data-model.md) · Next: [Business model →](09-business-model.md) · [Back to README](../README.md)
