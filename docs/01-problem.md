@@ -2,15 +2,15 @@
 
 ## 1. Data at risk
 
-"In this information age, we are all at risk of having our personal data being infringed upon by tech companies and mega corporations."
+In this information age, we are all at risk of having our personal data infringed upon by tech companies and mega corporations.
 
 ## 2. Women are especially exposed
 
-"Women who use health and wellness apps are particularly poised at having their private and intimate data at the mercy of tech companies who may not always have users best interests at heart."
+Women who use health and wellness apps are particularly at risk of having their private and intimate data at the mercy of tech companies who may not always have users' best interests at heart.
 
 ## 3. Gaps in existing solutions
 
-"Only a small percentage of women use these apps with privacy concerns holding most of them back."
+Only a small percentage of women use these apps, with privacy concerns holding most of them back.
 
 Popular apps keep your data on their servers, and some have misused it:
 
