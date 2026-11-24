@@ -117,15 +117,13 @@ Open http://localhost:5173, create a PIN and choose **Explore with 3 months of s
 | Field | Value |
 |---|---|
 | Team name | _TBD_ |
-| College | _TBD_ |
+| College | JSSATE |
 | Team ID | _TBD_ |
 
 | Role | Name | USN |
 |---|---|---|
-| Member 1 (Lead) | _TBD_ | _TBD_ |
-| Member 2 | _TBD_ | _TBD_ |
-| Member 3 | _TBD_ | _TBD_ |
-| Member 4 | _TBD_ | _TBD_ |
+| Member 1 (Lead) | Tanu V Shetty | 1JS24IS164 |
+| Member 2 | Suhas M | 1JS22IS152 |
 
 ## License
 
