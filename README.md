@@ -6,7 +6,7 @@
 
 **Track:** Personal Intelligence, Powered by Your Own Data
 
-**Status:** Ideation-stage project. This repo contains documentation only.
+**Status:** Hackathon MVP. This repo contains the project documentation and a working on-device prototype in [`app/`](app/README.md).
 
 ---
 
@@ -89,6 +89,16 @@ flowchart LR
 24-hour MVP: journal with 3× daily check-ins; period, symptom and perimenopause logging; pattern engine with on-device AI; one-tap doctor visit PDF; ElevenLabs voice for check-ins, breathing and insights (English, Hindi, Kannada); 3 months of sample data for the demo.
 
 [MVP and roadmap →](docs/08-mvp-and-roadmap.md)
+
+## Run the MVP
+
+```bash
+cd app
+npm install
+npm run dev
+```
+
+Open http://localhost:5173, create a PIN and choose **Explore with 3 months of sample data**. Details, features and known limitations: [app/README.md](app/README.md).
 
 ## Documentation
 
