@@ -11,7 +11,7 @@
 
 ## Roadmap
 
-- Hindi and Kannada support
+- Full Hindi and Kannada interface (the MVP covers Hindi and Kannada voice audio)
 - Lighter models for low-end phones
 - Phone-optimised on-device models
 - Clinic partnerships
