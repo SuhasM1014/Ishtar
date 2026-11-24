@@ -5,6 +5,8 @@ import { buildSummary, renderPDF, type Summary } from '../lib/doctorSummary';
 import { draftOverview } from '../lib/llm';
 import { useStore } from '../store';
 
+const fitRows = (t: string) => Math.max(3, t.split('\n').reduce((n, l) => n + Math.max(1, Math.ceil(l.length / 34)), 0) + 1);
+
 export function Doctor() {
   const { tables, settings } = useStore();
   const ai = useAI();
@@ -65,7 +67,7 @@ export function Doctor() {
       <p className="small muted">{sum.range}. Everything below is editable. Numbers were computed on your device.</p>
       <div className="card">
         <label className="field"><span>Title</span><input type="text" value={sum.title} onChange={(e) => edit({ title: e.target.value })} /></label>
-        <label className="field"><span>Overview</span><textarea value={sum.overview} onChange={(e) => edit({ overview: e.target.value })} /></label>
+        <label className="field"><span>Overview</span><textarea rows={fitRows(sum.overview)} value={sum.overview} onChange={(e) => edit({ overview: e.target.value })} /></label>
         {settings.aiEnabled && ai.llm === 'ready' && (
           <button className="btn sm ghost" disabled={drafting} onClick={aiDraft}>{drafting ? 'Drafting on-device…' : '✨ Draft overview with on-device AI'}</button>
         )}
@@ -74,7 +76,7 @@ export function Doctor() {
         <div key={s.key} className="card">
           <label className="field">
             <span><b style={{ color: 'var(--brand)' }}>{s.title}</b></span>
-            <textarea value={s.body} rows={Math.max(3, s.body.split('\n').length + 1)} onChange={(e) => editSection(s.key, e.target.value)} />
+            <textarea value={s.body} rows={fitRows(s.body)} onChange={(e) => editSection(s.key, e.target.value)} />
           </label>
         </div>
       ))}
